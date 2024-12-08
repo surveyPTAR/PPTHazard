@@ -102,7 +102,6 @@
   const coords = e.latlng;
   const lat = coords.lat.toFixed(5);
   const lng = coords.lng.toFixed(5);
-  var utmCoords = proj4(wgs84, utmZone33N, [latlng.lng, latlng.lat]); // Convert to UTM
 
   // Add a Leaflet popup at the user's location
   L.popup()
